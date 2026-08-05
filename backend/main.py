@@ -8,15 +8,14 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from sqlalchemy.orm import Session
 
-from backend.config import settings
-from backend.database import get_db, Base, engine
-from backend.models import User, PatientProfile, SymptomLog, Medication, MedicationAdherence, Appointment, TimelineEvent, ChatMessage, MedicalReport
-from backend import schemas
-from backend.auth import get_password_hash, verify_password, create_access_token, get_current_user, get_current_active_patient
-from backend.demo_data import seed_demo_data
-from backend.extractor import report_extractor
-from backend.agents_orch import agent_orchestrator
-
+from config import settings
+from database import get_db, Base, engine
+from models import User, PatientProfile, SymptomLog, Medication, MedicationAdherence, Appointment, TimelineEvent, ChatMessage, MedicalReport
+import schemas
+from auth import get_password_hash, verify_password, create_access_token, get_current_user, get_current_active_patient
+from demo_data import seed_demo_data
+from extractor import report_extractor
+from agents_orch import agent_orchestrator
 # Initialize database tables
 Base.metadata.create_all(bind=engine)
 
