@@ -17,7 +17,7 @@ def start_server():
     print("  CareFlow AI Post-Treatment Platform")
     print("=" * 60)
     print()
-    print("Starting backend API server on http://localhost:8000 ...")
+    print("Starting backend API server on https://aftercare-ai-bo9k.onrender.com")
     
     # Start backend
     backend_proc = subprocess.Popen(
@@ -28,7 +28,7 @@ def start_server():
     
     time.sleep(3)  # Give backend time to start
 
-    print("Starting frontend dev server on http://localhost:5173 ...")
+    print("Starting frontend dev server on https://aftercare-ai-bo9k.onrender.com")
     
     # Start frontend
     node_path = r"C:\Program Files\nodejs"
@@ -44,9 +44,9 @@ def start_server():
     print("=" * 60)
     print("  CareFlow is starting up!")
     print()
-    print("  Backend API:  http://localhost:8000")
-    print("  API Docs:     http://localhost:8000/docs")
-    print("  Frontend App: http://localhost:5173")
+    print("  Backend API:  https://aftercare-ai-bo9k.onrender.com")
+    print("  API Docs:     https://aftercare-ai-bo9k.onrender.com/docs")
+    print("  Frontend App: https://aftercare-ai-bo9k.onrender.com")
     print()
     print("  Demo Login: patient@example.com / password")
     print("  Or click 'Demo Patient Login' on the login page")
