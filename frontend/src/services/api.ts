@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create custom axios instance
 const api = axios.create({
-  baseURL: '', // Proxied automatically in Vite dev server, empty in production (same port serving)
+    baseURL: 'https://aftercare-ai-bo9k.onrender.com',
 });
 
 // Request interceptor to attach JWT token
