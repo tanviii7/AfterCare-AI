@@ -3,7 +3,7 @@ from pypdf import PdfReader
 from io import BytesIO
 from google import genai
 from google.genai import types
-from backend.config import settings
+from config import settings
 
 class ReportExtractor:
     def __init__(self):

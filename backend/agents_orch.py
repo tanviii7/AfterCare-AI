@@ -3,9 +3,10 @@ from datetime import datetime
 from sqlalchemy.orm import Session
 from google import genai
 from google.genai import types
-from backend.config import settings
-from backend.rag_service import rag_service
-from backend.models import User, PatientProfile, SymptomLog, Medication, Appointment, ChatMessage
+from google.genai import types
+from config import settings
+from rag_service import rag_service
+from models import User, PatientProfile, SymptomLog, Medication, Appointment, ChatMessage
 
 class AgentOrchestrator:
     def __init__(self):

@@ -5,8 +5,8 @@ from fastapi.testclient import TestClient
 # Ensure backend directory is in python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from backend.main import app
-from backend.database import get_db
+from main import app
+from database import get_db
 
 client = TestClient(app)
 

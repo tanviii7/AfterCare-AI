@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-from backend.models import User, PatientProfile, SymptomLog, Medication, MedicationAdherence, Appointment, TimelineEvent, ChatMessage, MedicalReport
-from backend.auth import get_password_hash
+from models import User, PatientProfile, SymptomLog, Medication, MedicationAdherence, Appointment, TimelineEvent, ChatMessage, MedicalReport
+from auth import get_password_hash
 
 def seed_demo_data(db: Session):
     # Check if data already exists

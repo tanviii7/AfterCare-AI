@@ -3,7 +3,7 @@ import json
 import os
 from typing import List, Dict
 from google import genai
-from backend.config import settings
+from config import settings
 
 # In-memory storage for guidelines
 GUIDELINES: List[Dict[str, str]] = [
